@@ -42,8 +42,7 @@ function calcUniAInyectar()
           un_corr = gl_level_num / sensibilidad;
         }
 
-        un_iny = un_cho + un_corr;
-        r.innerHTML = "Unidades a inyectar -> " + un_iny;
+        un_iny = un_cho + un_corr;   
         break;
     case "3":
         console.log("Carb = arepa");
@@ -109,10 +108,10 @@ function calcUniAInyectar()
           un_corr = gl_level_num / sensibilidad;
         }
 
-        un_iny = un_cho + un_corr;      
+        un_iny = un_cho + un_corr;        
         break;        
   }
-  //r.innerHTML = "Unidades a inyectar -> " + un_iny;
+  r.innerHTML = "Unidades a inyectar -> " + un_iny;
 }
 
 b.addEventListener("click", calcUniAInyectar);
