@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Conteo de CHO</title>
+  </head>
+  <body>
+    <h1>Bienvenido a CarbCount</h1>
+    <h2>Tu asistente para el conteo de carbohidratos y mejor control de tu diabetes, recuerda cuidarte prro</h2>
+    <label for="cho_items">Selecciona un CHO:</label><br>
+    <select id="cho_items">
+      <option value="1" id="1">Arroz cocido</option>
+      <option value="2" id="2">Buñuelo</option>
+      <option value="3" id="3">Arepa de maíz blanco o amarillo</option>
+      <option value="4" id="4">Papa común</option>
+      <option value="5" id="5">Harina de trigo</option>
+      <option value="6" id="6">Pan Blanco</option>
+    </select>
+     <p>
+       <p>Ingresa el peso (en gr) del carbohidrato anterior</p>
+       <input type="number" id="cho_weight" />
+     </p>
+     <p>
+       <p>Ingresa el valor de la glucometria</p>
+       <input type="number" id="gl_level" />
+     </p>
+     <input type="BUTTON" value="Calcular" id="calcular"/>
+     <p id="insuline_units"></p>
+     <script src="../js/main.js">
+     </script>
+  </body>
+</html>

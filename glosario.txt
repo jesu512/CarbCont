@@ -1,0 +1,16 @@
+gl -> glucose
+gr -> gramos
+un_corr -> unidades de correccion
+un_cho -> unidades de la cantidad de carbohidratos a ingerir
+un_iny -> unidades a inyectar
+
+ratio = 9
+sensibilidad = 34
+
+
+Formula para saber los gr de cho a ingerir
+(peso en gr del cho / peso en gramos de la tabla) * gramos de cho de la tabla / 9
+
+Formula para saber cuantas unidades de correcion debo aplicar
+---SOLO SI ESTA POR ARRIBA DE 160 LA GLUCOMETRIA---
+(glucometria - 160) / sensibilidad
