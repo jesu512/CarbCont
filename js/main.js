@@ -24,7 +24,7 @@ function calcUniAInyectar()
   switch (idCho_selected) 
   {
     case "1":
-        un_cho = ((cho_weight_num / 50) * 15) / 9;
+        un_cho = ((cho_weight_num / 50) * 15) / ratio;
         if (gl_level_num > 160) 
         {
           gl_level_num -= 160;
@@ -32,24 +32,86 @@ function calcUniAInyectar()
         }
 
         un_iny = un_cho + un_corr;
-        r.innerHTML = "Unidades a inyectar -> " + un_iny;
         break;
     case "2":
-        console.log("Carb = buñuelo");
+        //Carb = buñuelo
+        un_cho = ((cho_weight_num / 80) * 30) / ratio;
+        if (gl_level_num > 160) 
+        {
+          gl_level_num -= 160;
+          un_corr = gl_level_num / sensibilidad;
+        }
+
+        un_iny = un_cho + un_corr;   
         break;
     case "3":
         console.log("Carb = arepa");
+        un_cho = ((cho_weight_num / 80) * 30) / ratio;
+        if (gl_level_num > 160) 
+        {
+          gl_level_num -= 160;
+          un_corr = gl_level_num / sensibilidad;
+        }
+
+        un_iny = un_cho + un_corr;        
         break;
     case "4":
         console.log("Carb = papa");
+        un_cho = ((cho_weight_num / 80) * 15) / ratio;
+        if (gl_level_num > 160) 
+        {
+          gl_level_num -= 160;
+          un_corr = gl_level_num / sensibilidad;
+        }
+
+        un_iny = un_cho + un_corr;        
         break;
     case "5":
         console.log("Carb = harina de trigo");
+        un_cho = ((cho_weight_num / 20) * 15) / ratio;
+        if (gl_level_num > 160) 
+        {
+          gl_level_num -= 160;
+          un_corr = gl_level_num / sensibilidad;
+        }
+
+        un_iny = un_cho + un_corr;        
         break;
     case "6":
         console.log("Pan blanco");
+        un_cho = ((cho_weight_num / 30) * 15) / ratio;
+        if (gl_level_num > 160) 
+        {
+          gl_level_num -= 160;
+          un_corr = gl_level_num / sensibilidad;
+        }
+
+        un_iny = un_cho + un_corr;        
         break;
+    case "7":
+        console.log("Pure de papa");
+        un_cho = ((cho_weight_num / 70) * 15) / ratio;
+        if (gl_level_num > 160) 
+        {
+          gl_level_num -= 160;
+          un_corr = gl_level_num / sensibilidad;
+        }
+
+        un_iny = un_cho + un_corr;        
+        break;
+    case "8":
+        console.log("Empanada");
+        un_cho = ((cho_weight_num / 52) * 30) / ratio;
+        if (gl_level_num > 160) 
+        {
+          gl_level_num -= 160;
+          un_corr = gl_level_num / sensibilidad;
+        }
+
+        un_iny = un_cho + un_corr;        
+        break;        
   }
+  r.innerHTML = "Unidades a inyectar -> " + un_iny;
 }
 
 b.addEventListener("click", calcUniAInyectar);
