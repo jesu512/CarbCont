@@ -32,6 +32,7 @@ function calcUniAInyectar()
         }
 
         un_iny = un_cho + un_corr;
+        r.innerHTML = "Unidades a inyectar -> " + un_iny;
         break;
     case "2":
         //Carb = buñuelo
@@ -42,10 +43,11 @@ function calcUniAInyectar()
           un_corr = gl_level_num / sensibilidad;
         }
 
-        un_iny = un_cho + un_corr;   
+        un_iny = un_cho + un_corr;
+        r.innerHTML = "Unidades a inyectar -> " + un_iny;
         break;
     case "3":
-        console.log("Carb = arepa");
+        //console.log("Carb = arepa");
         un_cho = ((cho_weight_num / 80) * 30) / ratio;
         if (gl_level_num > 160) 
         {
@@ -53,7 +55,8 @@ function calcUniAInyectar()
           un_corr = gl_level_num / sensibilidad;
         }
 
-        un_iny = un_cho + un_corr;        
+        un_iny = un_cho + un_corr;
+        r.innerHTML = "Unidades a inyectar -> " + un_iny;
         break;
     case "4":
         console.log("Carb = papa");
@@ -64,7 +67,8 @@ function calcUniAInyectar()
           un_corr = gl_level_num / sensibilidad;
         }
 
-        un_iny = un_cho + un_corr;        
+        un_iny = un_cho + un_corr;
+        r.innerHTML = "Unidades a inyectar -> " + un_iny;
         break;
     case "5":
         console.log("Carb = harina de trigo");
@@ -75,7 +79,8 @@ function calcUniAInyectar()
           un_corr = gl_level_num / sensibilidad;
         }
 
-        un_iny = un_cho + un_corr;        
+        un_iny = un_cho + un_corr;
+        r.innerHTML = "Unidades a inyectar -> " + un_iny;
         break;
     case "6":
         console.log("Pan blanco");
@@ -86,7 +91,8 @@ function calcUniAInyectar()
           un_corr = gl_level_num / sensibilidad;
         }
 
-        un_iny = un_cho + un_corr;        
+        un_iny = un_cho + un_corr;
+        r.innerHTML = "Unidades a inyectar -> " + un_iny;
         break;
     case "7":
         console.log("Pure de papa");
@@ -97,7 +103,8 @@ function calcUniAInyectar()
           un_corr = gl_level_num / sensibilidad;
         }
 
-        un_iny = un_cho + un_corr;        
+        un_iny = un_cho + un_corr;
+        r.innerHTML = "Unidades a inyectar -> " + un_iny;
         break;
     case "8":
         console.log("Empanada");
@@ -108,10 +115,11 @@ function calcUniAInyectar()
           un_corr = gl_level_num / sensibilidad;
         }
 
-        un_iny = un_cho + un_corr;        
+        un_iny = un_cho + un_corr;
+        r.innerHTML = "Unidades a inyectar -> " + un_iny;
         break;        
   }
-  r.innerHTML = "Unidades a inyectar -> " + un_iny;
+  //r.innerHTML = "Unidades a inyectar -> " + un_iny;
 }
 
 b.addEventListener("click", calcUniAInyectar);
