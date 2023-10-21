@@ -1,9 +1,10 @@
+import { sql } from "@vercel/postgres";
+
 var r = document.getElementById("insuline_units");
 var b = document.getElementById("calcular");
 var ratio = 9, sensibilidad = 34;
 
-
-function calcUniAInyectar()
+async function calcUniAInyectar()
 {
   //obtencion del valor del combobox
   var cho_list = document.getElementById ("cho_items");
@@ -21,9 +22,13 @@ function calcUniAInyectar()
   var un_cho = 0;
   var un_iny = 0;
 
+  const likes = 10;
+  const { rows } = await sql`select * from users limit = ${likes};`;
+
   switch (idCho_selected) 
   {
     case "1":
+        console.log(rows);
         un_cho = ((cho_weight_num / 50) * 15) / ratio;
         if (gl_level_num > 160) 
         {
