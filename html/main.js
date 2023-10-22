@@ -1,4 +1,4 @@
-import { sql } from "@vercel/postgres";
+import { sql } from "./@vercel/postgres";
 
 var r = document.getElementById("insuline_units");
 var b = document.getElementById("calcular");
