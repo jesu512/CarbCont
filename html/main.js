@@ -20,9 +20,6 @@ async function calcUniAInyectar()
   var un_cho = 0;
   var un_iny = 0;
 
-  const likes = 10;
-  const { rows } = await sql`select * from users limit = ${likes};`;
-
   switch (idCho_selected) 
   {
     case "1":
