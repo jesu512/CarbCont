@@ -1,5 +1,3 @@
-import { sql } from "./@vercel/postgres";
-
 var r = document.getElementById("insuline_units");
 var b = document.getElementById("calcular");
 var ratio = 9, sensibilidad = 34;
