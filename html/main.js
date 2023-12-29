@@ -124,7 +124,7 @@ async function calcUniAInyectar()
         r.innerHTML = "Unidades a inyectar -> " + un_iny;
         break;        
   }
-  //r.innerHTML = "Unidades a inyectar -> " + un_iny;
+  r.innerHTML = "Unidades a inyectar -> " + un_iny;
 }
 
 b.addEventListener("click", calcUniAInyectar);
