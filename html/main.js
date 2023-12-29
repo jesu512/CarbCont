@@ -23,7 +23,6 @@ async function calcUniAInyectar()
   switch (idCho_selected) 
   {
     case "1":
-        console.log(rows);
         un_cho = ((cho_weight_num / 50) * 15) / ratio;
         if (gl_level_num > 160) 
         {
