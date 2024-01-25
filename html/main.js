@@ -1,6 +1,6 @@
 var r = document.getElementById("insuline_units");
 var b = document.getElementById("calcular");
-var ratio = 9, sensibilidad = 34;
+var ratio = 8, sensibilidad = 30;
 
 async function calcUniAInyectar()
 {
